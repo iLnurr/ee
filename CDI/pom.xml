@@ -49,11 +49,11 @@
                         <goals>
                             <goal>java</goal>
                         </goals>
-                        <configuration>
-                            <mainClass>cdi.Main</mainClass>
-                        </configuration>
                     </execution>
                 </executions>
+                <configuration>
+                    <mainClass>cdi.Main</mainClass>
+                </configuration>
             </plugin>
 
             <plugin>
