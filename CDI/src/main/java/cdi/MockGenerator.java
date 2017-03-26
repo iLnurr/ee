@@ -14,8 +14,8 @@ public class MockGenerator implements NumberGenerator {
     private Logger logger;
     @Loggable
     public String generateNumber() {
-        String mock = "mock";
-        logger.info("gen-ted mock" + mock);
+        String mock = "MOCK";
+        logger.info("gen-ted mock: " + mock);
         return mock;
     }
 }

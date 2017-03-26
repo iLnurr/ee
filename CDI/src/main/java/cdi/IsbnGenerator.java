@@ -1,6 +1,7 @@
 package cdi;
 
 import javax.inject.Inject;
+import java.util.logging.Logger;
 
 /**
  * Created by ilnur on 23.03.17.
@@ -8,6 +9,8 @@ import javax.inject.Inject;
 @ThirteenDigits
 @Loggable
 public class IsbnGenerator implements NumberGenerator{
+    @Inject
+    Logger logger;
     @Inject @ThirteenDigits
     private String prefix;
     @Inject @ThirteenDigits
@@ -15,6 +18,8 @@ public class IsbnGenerator implements NumberGenerator{
     @Inject @Random
     private double postfix;
     public String generateNumber() {
-        return prefix + editorNumber + postfix;
+        String result= prefix + editorNumber + postfix;
+        logger.info("gen-ted isbn" + result);
+        return result;
     }
 }
