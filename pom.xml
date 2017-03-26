@@ -12,5 +12,6 @@
 
     <modules>
         <module>CDI</module>
+        <module>VALID</module>
     </modules>
 </project>
