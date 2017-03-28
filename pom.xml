@@ -13,5 +13,6 @@
     <modules>
         <module>CDI</module>
         <module>VALID</module>
+        <module>JPA</module>
     </modules>
 </project>
