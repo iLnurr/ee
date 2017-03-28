@@ -10,8 +10,8 @@
         <properties>
             <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
             <property name="javax.persistence.schema-generation.scripts.action" value="drop-and-create"/>
-            <property name="javax.persistence.schema-generation.scripts.create-target" value="chapter04Create.ddl"/>
-            <property name="javax.persistence.schema-generation.scripts.drop-target" value="chapter04Drop.ddl"/>
+            <property name="javax.persistence.schema-generation.scripts.create-target" value="JPACreate.ddl"/>
+            <property name="javax.persistence.schema-generation.scripts.drop-target" value="JPADrop.ddl"/>
             <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/>
             <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/JPA;create=true"/>
             <property name="javax.persistence.jdbc.user" value="APP"/>
@@ -27,8 +27,8 @@
         <properties>
             <property name="javax.persistence.schema-generation.database.action" value="create"/>
             <property name="javax.persistence.schema-generation.scripts.action" value="drop-and-create"/>
-            <property name="javax.persistence.schema-generation.scripts.create-target" value="create.sql"/>
-            <property name="javax.persistence.schema-generation.scripts.drop-target" value="drop.sql"/>
+            <property name="javax.persistence.schema-generation.scripts.create-target" value="JPATestCreate.sql"/>
+            <property name="javax.persistence.schema-generation.scripts.drop-target" value="JPATestDrop.sql"/>
             <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.EmbeddedDriver"/>
             <property name="javax.persistence.jdbc.url" value="jdbc:derby:memory:JPA;create=true"/>
             <property name="javax.persistence.sql-load-script-source" value="insert.sql"/>
