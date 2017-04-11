@@ -14,5 +14,6 @@
         <module>CDI</module>
         <module>VALID</module>
         <module>JPA</module>
+        <module>EJB</module>
     </modules>
 </project>

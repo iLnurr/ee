@@ -12,6 +12,12 @@ Install derby on Ubuntu 16.04:
     permission java.net.SocketPermission "localhost:1527", "listen";
   };
 6. cd $DERBY_HOME/bin
+7. sudo chmod 755 dblook ij NetworkServerControl 
 7. sudo ./startNetworkServer
 
 ---------------------------------------------
+
+Start Derby
+1. cd $DERBY_HOME/bin
+2. ./startNetworkServer
+
