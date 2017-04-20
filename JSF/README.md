@@ -17,19 +17,27 @@ Install derby on Ubuntu 16.04:
 
 ---------------------------------------------
 
-Start Derby
-1. cd $DERBY_HOME/bin
-2. ./startNetworkServer
+1. Start Derby
+1.1. cd $DERBY_HOME/bin
+1.2. ./startNetworkServer
 
-Create database
-1. cd $DERBY_HOME/bin
-2. ij
-3. connect 'jdbc:derby:memory:lab11db;create=true'
+2. Create database
+2.1. cd $DERBY_HOME/bin
+2.2. ij
+2.3. connect 'jdbc:derby:memory:lab11db;create=true'
 
-Start GlassFish
-1.  sudo /home/ilnur/glassfish4/bin/asadmin start-domain
+3. Deploy and run application
 
+  1 variant: Start GlassFish
+sudo /home/ilnur/glassfish4/bin/asadmin start-domain
 Deploy war file
-1. sudo /home/ilnur/glassfish4/bin/asadmin deploy /home/ilnur/JSF.war
+sudo /home/ilnur/glassfish4/bin/asadmin deploy /home/ilnur/JSF.war
+
+  2 variant:
+using IntellijIdea configuration (GlassFish local)
+
+4. go to localhost:8080/JSF-1.0.0-SNAPSHOT/newBook.faces
+
+
 
 
