@@ -15,5 +15,6 @@
         <module>VALID</module>
         <module>JPA</module>
         <module>EJB</module>
+        <module>JSF</module>
     </modules>
 </project>
