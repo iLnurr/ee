@@ -1,12 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!DOCTYPE creditCard [
-        <!ELEMENT creditCard (expiry_date|control_number|type)*>
-        <!ATTLIST creditCard
-                number CDATA #REQUIRED>
-        <!ELEMENT expiry_date (#PCDATA)>
-        <!ELEMENT control_number (#PCDATA)>
-        <!ELEMENT type (#PCDATA)>
-        ]>
 <creditCard number="12345678">
     <expiry_date>10/14</expiry_date>
     <control_number>566</control_number>
