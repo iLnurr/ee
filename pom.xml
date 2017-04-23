@@ -16,5 +16,6 @@
         <module>JPA</module>
         <module>EJB</module>
         <module>JSF</module>
+        <module>XML-JSON</module>
     </modules>
 </project>

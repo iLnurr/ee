@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<creditCard number="12345678">
+    <expiry_date>10/14</expiry_date>
+    <control_number>566</control_number>
+    <type>Visa</type>
+</creditCard>
