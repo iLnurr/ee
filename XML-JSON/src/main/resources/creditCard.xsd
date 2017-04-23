@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="creditCard" type="creditCard"/>
+
+  <xs:complexType name="creditCard">
+    <xs:sequence>
+      <xs:element name="expiry_date" type="xs:string" minOccurs="0"/>
+      <xs:element name="control_number" type="xs:int" minOccurs="0"/>
+      <xs:element name="type" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="number" type="xs:string"/>
+  </xs:complexType>
+</xs:schema>
+
