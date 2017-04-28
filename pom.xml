@@ -17,5 +17,6 @@
         <module>EJB</module>
         <module>JSF</module>
         <module>XML-JSON</module>
+        <module>JMS</module>
     </modules>
 </project>
