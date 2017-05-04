@@ -52,5 +52,5 @@ _____________________________________________
 
 Run example:
 
-> java -cp JMS/target/classes/jms/first_variant OrderConsumer
-> java -cp JMS/target/classes/jms/first_variant OrderProducer 2000
+> java -cp JMS/target/classes/jms/jndi_variant OrderConsumer
+> java -cp JMS/target/classes/jms/jndi_variant OrderProducer 2000
