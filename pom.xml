@@ -18,5 +18,6 @@
         <module>JSF</module>
         <module>XML-JSON</module>
         <module>JMS</module>
+        <module>SOAP</module>
     </modules>
 </project>
