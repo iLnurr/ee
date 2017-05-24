@@ -20,5 +20,6 @@
         <module>JMS</module>
         <module>SOAP</module>
         <module>SOAP_WS_Consumer</module>
+        <module>REST</module>
     </modules>
 </project>

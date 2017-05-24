@@ -38,4 +38,4 @@ Generate sources with Maven  with the following command
 
 ______________________________________________
 Run consumer service
->appclient -client SOAP_WS_Consumer-1.0.0-SNAPSHOT.jar
+> appclient -client SOAP_WS_Consumer-1.0.0-SNAPSHOT.jar
