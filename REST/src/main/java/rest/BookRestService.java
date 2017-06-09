@@ -25,8 +25,8 @@ public class BookRestService {
     private UriInfo uriInfo;
 
     /**
-     * curl -X POST --data-binary "<book><description>Science fiction comedy book</description><illustrations>false</illustrations><isbn>1-84023-742-2</isbn><nbOfPage>354</nbOfPage><price>12.5</price><title>The Hitchhiker's Guide to the Galaxy</title></book>" -H "Content-Type: application/xml" http://localhost:8080/chapter15-service-1.0/rs/book -v
-     * curl -X POST --data-binary "{\"description\":\"Science fiction comedy book\",\"illustrations\":false,\"isbn\":\"1-84023-742-2\",\"nbOfPage\":354,\"price\":12.5,\"title\":\"The Hitchhiker's Guide to the Galaxy\"}" -H "Content-Type: application/json" http://localhost:8080/chapter15-service-1.0/rs/book -v
+     * curl -X POST --data-binary "<book><description>Science fiction comedy book</description><illustrations>false</illustrations><isbn>1-84023-742-2</isbn><nbOfPage>354</nbOfPage><price>12.5</price><title>The Hitchhiker's Guide to the Galaxy</title></book>" -H "Content-Type: application/xml" http://localhost:8080/REST-1.0.0-SNAPSHOT/rs/book -v
+     * curl -X POST --data-binary "{\"description\":\"Science fiction comedy book\",\"illustrations\":false,\"isbn\":\"1-84023-742-2\",\"nbOfPage\":354,\"price\":12.5,\"title\":\"The Hitchhiker's Guide to the Galaxy\"}" -H "Content-Type: application/json" http://localhost:8080/REST-1.0.0-SNAPSHOT/rs/book -v
      */
     @POST
     public Response createBook(Book book) {
@@ -38,8 +38,8 @@ public class BookRestService {
     }
 
     /**
-     * JSON : curl -X GET -H "Accept: application/json" http://localhost:8080/chapter15-service-1.0/rs/book/1 -v
-     * XML  : curl -X GET -H "Accept: application/xml" http://localhost:8080/chapter15-service-1.0/rs/book/1 -v
+     * JSON : curl -X GET -H "Accept: application/json" http://localhost:8080/REST-1.0.0-SNAPSHOT/rs/book/1 -v
+     * XML  : curl -X GET -H "Accept: application/xml" http://localhost:8080/REST-1.0.0-SNAPSHOT/rs/book/1 -v
      */
     @GET
     @Path("{id}")
@@ -53,8 +53,8 @@ public class BookRestService {
     }
 
     /**
-     * JSON : curl -X GET -H "Accept: application/json" http://localhost:8080/chapter15-service-1.0/rs/book -v
-     * XML  : curl -X GET -H "Accept: application/xml" http://localhost:8080/chapter15-service-1.0/rs/book -v
+     * JSON : curl -X GET -H "Accept: application/json" http://localhost:8080/REST-1.0.0-SNAPSHOT/rs/book -v
+     * XML  : curl -X GET -H "Accept: application/xml" http://localhost:8080/REST-1.0.0-SNAPSHOT/rs/book -v
      */
     @GET
     public Response getAllBooks() {
@@ -64,7 +64,7 @@ public class BookRestService {
     }
 
     /**
-     * curl -X DELETE http://localhost:8080/chapter15-service-1.0/rs/book/1 -v
+     * curl -X DELETE http://localhost:8080/REST-1.0.0-SNAPSHOT/rs/book/1 -v
      */
     @DELETE
     @Path("{id}")

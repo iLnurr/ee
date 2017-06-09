@@ -23,7 +23,7 @@ check classpath
 1. echo $CLASSPATH
 
 Startup ij
-0. cd cd /opt/Apache/db-derby-10.13.1.1-bin/bin
+0. cd /opt/Apache/db-derby-10.13.1.1-bin/bin
 1. ij
 
 create database in ij
