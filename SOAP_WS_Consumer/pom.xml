@@ -34,12 +34,28 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>soap_ws_consumer.WebService.Consumer</mainClass>
+                            <mainClass>soap_consumer.WebServiceConsumer</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
             </plugin>
-
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>add-source</goal>
+                        </goals>
+                        <configuration>
+                            <sources>
+                                <source>${project.build.directory}/generated-sources/wsimport</source>
+                            </sources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
             <plugin>
                 <groupId>org.jvnet.jax-ws-commons</groupId>
                 <artifactId>jaxws-maven-plugin</artifactId>
@@ -68,10 +84,6 @@
                 <configuration>
                     <source>1.7</source>
                     <target>1.7</target>
-                    <includes>
-                        <include>src/main/java/**/*.java</include>
-                        <include>src/main/java/**/*.java</include>
-                    </includes>
                 </configuration>
             </plugin>
         </plugins>

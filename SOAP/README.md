@@ -33,9 +33,9 @@ Restart
 To run these examples you must have GlassFish running and create the following administered objects :
 
 After building with Maven, deploy  with the following command
-> asadmin deploy SOAP-1.0.0-SNAPSHOT.war
+> /opt/glassfish4/bin/asadmin deploy SOAP-1.0.0-SNAPSHOT.war
 
 If the deployment is successful, the following command should return the name of the deployed war
-> asadmin list-components
+> /opt/glassfish4/bin/asadmin list-components
 
 Go to the index.html page : http://localhost:8080/SOAP-1.0.0-SNAPSHOT/CardValidatorService

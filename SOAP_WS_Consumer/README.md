@@ -38,4 +38,5 @@ Generate sources with Maven  with the following command
 
 ______________________________________________
 Run consumer service
-> appclient -client SOAP_WS_Consumer-1.0.0-SNAPSHOT.jar
+> cd /opt/glassfish4/glassfish/bin
+> ./appclient -client /home/ilnur/IdeaProjects/ee/SOAP_WS_Consumer/target/SOAP_WS_Consumer-1.0.0-SNAPSHOT.jar
