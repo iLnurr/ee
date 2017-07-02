@@ -21,5 +21,7 @@
         <module>SOAP</module>
         <module>SOAP_WS_Consumer</module>
         <module>REST</module>
+        <module>JMS2_SPRING/Spring4MVCJmsActiveMQExample</module>
+        <module>JMS2_SPRING/Spring4MVCJmsActiveMQOrderInventory</module>
     </modules>
 </project>
