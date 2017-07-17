@@ -8,17 +8,20 @@ Install GlassFish 4  on Ubuntu 16.04:
 6. sudo chown -R glassfish:glassfish /opt/glassfish4
 ---------------------------------------------
 Start GlassFish:
+
 7. /opt/glassfish4/bin/asadmin start-domain
 
 then open http://localhost:4848/
 
 ---------------------------------------------
 Stop GlassFish
+
 8. /opt/glassfish4/bin/asadmin stop-domain
 
 ---------------------------------------------
 
 Change pass and login (fisrt in)
+
 9. /opt/glassfish4/bin/asadmin change-admin-password
 
 I set: login - `admin` and password - `admin`
