@@ -7,7 +7,7 @@ Install GlassFish 4  on Ubuntu 16.04:
 5. sudo useradd glassfish -U -s /bin/false
 6. sudo chown -R glassfish:glassfish /opt/glassfish4
 ---------------------------------------------
-Start GlassFish
+Start GlassFish:
 7. /opt/glassfish4/bin/asadmin start-domain
 
 then open http://localhost:4848/
